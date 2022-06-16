@@ -16,3 +16,37 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.value {
+  font-size: 60px;
+}
+
+.label {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.timer {
+  display: flex;
+}
+
+.field {
+  display: grid;
+  padding: 10px;
+  justify-items: center;
+}
+
+input {
+  width: 350px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+button {
+  height: 40px;
+  font-size: 22px;
+}
+
+.input-wrapper {
+  display: inline-flex;
+}
