@@ -3,10 +3,10 @@ import Notiflix from 'notiflix';
 let firstDelay = document.getElementsByName("delay")[0];
 let step = document.getElementsByName("step")[0];
 let amount = document.getElementsByName("amount")[0];
-let button = document.querySelector("button")
+let button = document.querySelector("button");
 
-
-button.addEventListener("click", evt => {
+button.addEventListener("click", e => {
+  e.preventDefault();
   let delay = firstDelay.valueAsNumber;
   for (let position = 1; position <= amount.valueAsNumber; position++) {
     createPromise(position, delay)
